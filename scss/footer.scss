@@ -1,0 +1,45 @@
+footer {
+  z-index: 2;
+  border-top: 5px solid;
+  border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+  background-color: #4c5055;
+  position: relative;
+
+  img {
+    width: 50px;
+  }
+
+  a {
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+
+    &:hover {
+      color: #ffa500 !important;
+    }
+  }
+
+  .iconos {
+    a {
+      i {
+        color: #fff;
+        transition: all ease 200ms;
+
+        &:hover {
+          color: #ffa500;
+          transform: scale(2);
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .separador {
+    color: #fff;
+  }
+}
+
+

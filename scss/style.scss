@@ -1,0 +1,353 @@
+@import "fonts";
+@import "footer";
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap);
+
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+body {
+    background-image: url(../css/img/314.jpg);
+    background-attachment: fixed;
+    font-family: "GothamRoundedBook", sans-serif;
+    color: #4C5055;
+    h2 {
+        text-align: center;
+        font-size: 2.6rem;
+        font-family: "GothamRoundedMedium", sans-serif;
+        font-weight: normal;
+    }
+    h3 {
+        text-align: center;
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 1.5rem;
+        font-weight: normal;
+        font-family: "GothamRoundedLight", sans-serif;
+    }
+    .titulo-seccion {
+        margin-bottom: 50px;
+        padding-bottom: 15px;
+    }
+    .subtitle {
+        text-transform: uppercase;
+        border-bottom: 1px solid #4C5055;
+    }
+    .navbar{
+       
+        .navbar-nav {
+            .nav-link {
+                transition: color 0.3s ease;
+                &:hover {
+                    color: orange !important;
+                }
+            }
+        }
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+    }
+    .seccion {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    // 
+    .imgHome {
+  background-image: url('../css/img/fondo_mec.avif'); // Cambia por tu imagen
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); // Overlay semitransparente
+    z-index: 0;
+  }
+
+  .textoIndex {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+  }
+  border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+}
+
+// Responsividad
+@media (max-width: 768px) {
+  .imgHome {
+    height: 50vh;
+
+    .textoIndex {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+    #seccionUno {
+        scroll-margin-top: 1em;
+        .cmn-divfloat {
+            position: fixed !important;
+            bottom: 10px;
+            right: 15px;
+            display: none;
+            a{
+                background: #ffa500;
+                border:none;
+                color: #FFF;
+            }
+            a:hover{
+                color: #4c5055;
+            }
+            z-index: 1;
+        }
+        .textoUno {
+            margin-top:5%;
+            overflow: hidden;
+            .textoBiografiaUno {
+                justify-content: center;
+                text-align: center;
+                .row {
+                    padding: 0;
+                    margin: 20px 1rem;
+                }
+                div {
+                    > .row {
+                        margin-top: 0;
+                    }
+                }
+            }
+            .row{
+                --bs-gutter-x: 0 rem;
+            }
+            border-bottom: 5px solid;
+            border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+        }
+    }
+    #seccionDos {
+       
+        .container{
+            .card{
+                align-items: center;
+                padding-top: 10%;
+                border-radius: 10px;
+                img{
+                    width: 40%
+                }
+                .card-body{
+                    text-align: center;
+                    .card-title{
+                        font-size: 1.5rem;
+                        font-family: "GothamRoundedMedium", sans-serif;
+                        color: #4C5055;
+                    }
+                    .card-text{
+                        font-size: 1.2rem;
+                        color: #4C5055;
+                    }
+                }
+
+            }
+        }
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+    }
+
+    #seccionTres {
+  scroll-margin-top: 1em;
+  margin-bottom: 30px;
+
+  form {
+    margin-top: 15px;
+
+    input {
+      margin-bottom: 30px;
+      color: #ffffff;
+      // Puedes agregar background-color si quieres que el input tenga fondo oscuro o algún estilo
+      // background-color: #333;
+      // También considera agregar padding o border-radius para mejor UX
+    }
+  }
+
+  .botonContacto {
+    button {
+      font-family: "GothamRoundedMedium", sans-serif;
+      color: #fff;
+      background-color: #ffa500;
+      border-color: #ffa500;
+      transition: color 0.3s ease, background-color 0.3s ease; // para suavizar hover
+
+      &:hover {
+        background-color: lighten(#DD0000, 10%); // o algún color más claro para hover
+        border-color: lighten(#DD0000, 10%);
+      }
+    }
+  }
+}
+
+    
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        .navbar {
+            .container-fluid{
+                img{
+                    width:20%;
+                }
+                .collapse{
+                    text-align: center;
+                    .navbar-nav{
+                        width: 88vw;
+                        justify-content: center;
+                    }
+                }
+            }
+            .navbar-brand {
+                font-size: 22px;
+                margin-left: 0;
+            }
+        }
+        .imgHome {
+            .textoIndex {
+                width: 100%;
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        #seccionTres {
+            .card {
+                height: 24rem;
+                &.card1 {
+                    background-image: url("../css/img/nov6.png");
+                }
+                &.card-large{
+                    height: 24rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        .navbar {
+            img {
+                width: 10%;
+                margin: 0;
+            }
+        }
+        .imgHome {
+            .textoIndex {
+                width: 100%;
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+        .seccion {
+            margin-top: 20px;
+        }
+        .titulo-seccion {
+            margin-bottom: 0px;
+        }
+        #seccionDos {
+            .principalAOcultar{
+                display: none;
+            }
+            .columna-imagenes {
+                .articuloOculto{
+                    display: block;
+                    text-align: center;
+                    .capaUno{
+                        font-size: 7rem;
+                        font-family: 'Ubuntu', sans-serif;
+                        color: #b0b0b0;
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .contPropuesta{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 1.2rem;
+                        padding-top: 5.5rem;
+                        text-align: j;
+                        .tituloCapa{
+                            text-align: left;
+                            font-family: "GothamRoundedBold";
+                            text-transform: uppercase;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        
+        }
+        #seccionTres {
+            .card {
+                margin-bottom: 12px;
+                &.card-large {
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 446px) {
+    body {
+        .imgHome {
+            .textoIndex {
+                margin-top: -80%;
+            }
+        }
+        #seccionTres{
+            .card {
+                height: 14rem;
+                &.card1 {
+                    background-image: url("../css/img/nov6.png");
+                }
+                &.card4 {
+                    background-image: url("../css/img/nov7.png");
+                }
+                &.card-large{
+                    height: 14rem;
+                }
+                .card-body{
+                    .card-title{
+                        font-size: 30px;
+                    }
+                    .card-text{
+                        font-size: 20px;
+                    }
+                }
+                
+            } 
+        } 
+    }
+}

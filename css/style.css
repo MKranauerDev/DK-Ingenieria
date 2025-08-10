@@ -1,0 +1,416 @@
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap);
+@font-face {
+  font-family: 'GothamRoundedBold';
+  src: url("./fonts/GothamRoundedBold.otf") format("opentype"), url("./fonts/GothamRoundedBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'GothamRoundedBook';
+  src: url("./fonts/GothamRoundedBook.otf") format("opentype"), url("./fonts/GothamRoundedBook.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'GothamRoundedLight';
+  src: url("./fonts/GothamRoundedLight.otf") format("opentype"), url("./fonts/GothamRoundedLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'GothamRoundedMedium';
+  src: url("./fonts/GothamRoundedMedium.otf") format("opentype"), url("./fonts/GothamRoundedMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'GothamRoundedBookItalic';
+  src: url("./fonts/GothamRoundedBookItalic.otf") format("opentype"), url("./fonts/GothamRoundedBookItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'GothamRoundedLightItalic';
+  src: url("./fonts/GothamRoundedLightItalic.otf") format("opentype"), url("./fonts/GothamRoundedLightItalic.ttf") format("truetype");
+}
+
+footer {
+  z-index: 2;
+  border-top: 5px solid;
+  -o-border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+     border-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#DD0000), to(#FFCC00)) 8;
+     border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+  background-color: #4c5055;
+  position: relative;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer a {
+  color: #fff !important;
+  text-decoration: none !important;
+  -webkit-transition: color 0.3s ease !important;
+  transition: color 0.3s ease !important;
+}
+
+footer a:hover {
+  color: #ffa500 !important;
+}
+
+footer .iconos a i {
+  color: #fff;
+  -webkit-transition: all ease 200ms;
+  transition: all ease 200ms;
+}
+
+footer .iconos a i:hover {
+  color: #ffa500;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+footer .copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer .separador {
+  color: #fff;
+}
+
+body {
+  background-image: url(../css/img/314.jpg);
+  background-attachment: fixed;
+  font-family: "GothamRoundedBook", sans-serif;
+  color: #4C5055;
+}
+
+body h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-family: "GothamRoundedMedium", sans-serif;
+  font-weight: normal;
+}
+
+body h3 {
+  text-align: center;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "GothamRoundedLight", sans-serif;
+}
+
+body .titulo-seccion {
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+}
+
+body .subtitle {
+  text-transform: uppercase;
+  border-bottom: 1px solid #4C5055;
+}
+
+body .navbar {
+  border-bottom: 5px solid;
+  -o-border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+     border-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#DD0000), to(#FFCC00)) 8;
+     border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+}
+
+body .navbar .navbar-nav .nav-link {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body .navbar .navbar-nav .nav-link:hover {
+  color: orange !important;
+}
+
+body .seccion {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+body .imgHome {
+  background-image: url("../css/img/fondo_mec.avif");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  border-bottom: 5px solid;
+  -o-border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+     border-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#DD0000), to(#FFCC00)) 8;
+     border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+}
+
+body .imgHome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+body .imgHome .textoIndex {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+body .imgHome .textoIndex h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  body .imgHome {
+    height: 50vh;
+  }
+  body .imgHome .textoIndex h2 {
+    font-size: 1.8rem;
+  }
+}
+
+body #seccionUno {
+  scroll-margin-top: 1em;
+}
+
+body #seccionUno .cmn-divfloat {
+  position: fixed !important;
+  bottom: 10px;
+  right: 15px;
+  display: none;
+  z-index: 1;
+}
+
+body #seccionUno .cmn-divfloat a {
+  background: #ffa500;
+  border: none;
+  color: #FFF;
+}
+
+body #seccionUno .cmn-divfloat a:hover {
+  color: #4c5055;
+}
+
+body #seccionUno .textoUno {
+  margin-top: 5%;
+  overflow: hidden;
+  border-bottom: 5px solid;
+  -o-border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+     border-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#DD0000), to(#FFCC00)) 8;
+     border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+}
+
+body #seccionUno .textoUno .textoBiografiaUno {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body #seccionUno .textoUno .textoBiografiaUno .row {
+  padding: 0;
+  margin: 20px 1rem;
+}
+
+body #seccionUno .textoUno .textoBiografiaUno div > .row {
+  margin-top: 0;
+}
+
+body #seccionUno .textoUno .row {
+  --bs-gutter-x: 0 rem;
+}
+
+body #seccionDos {
+  border-bottom: 5px solid;
+  -o-border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+     border-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#DD0000), to(#FFCC00)) 8;
+     border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
+}
+
+body #seccionDos .container .card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10%;
+  border-radius: 10px;
+}
+
+body #seccionDos .container .card img {
+  width: 40%;
+}
+
+body #seccionDos .container .card .card-body {
+  text-align: center;
+}
+
+body #seccionDos .container .card .card-body .card-title {
+  font-size: 1.5rem;
+  font-family: "GothamRoundedMedium", sans-serif;
+  color: #4C5055;
+}
+
+body #seccionDos .container .card .card-body .card-text {
+  font-size: 1.2rem;
+  color: #4C5055;
+}
+
+body #seccionTres {
+  scroll-margin-top: 1em;
+  margin-bottom: 30px;
+}
+
+body #seccionTres form {
+  margin-top: 15px;
+}
+
+body #seccionTres form input {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+body #seccionTres .botonContacto button {
+  font-family: "GothamRoundedMedium", sans-serif;
+  color: #fff;
+  background-color: #ffa500;
+  border-color: #ffa500;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body #seccionTres .botonContacto button:hover {
+  background-color: #ff1111;
+  border-color: #ff1111;
+}
+
+@media screen and (max-width: 991px) {
+  body .navbar .container-fluid img {
+    width: 20%;
+  }
+  body .navbar .container-fluid .collapse {
+    text-align: center;
+  }
+  body .navbar .container-fluid .collapse .navbar-nav {
+    width: 88vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .navbar .navbar-brand {
+    font-size: 22px;
+    margin-left: 0;
+  }
+  body .imgHome .textoIndex {
+    width: 100%;
+  }
+  body .imgHome .textoIndex h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body #seccionTres .card {
+    height: 24rem;
+  }
+  body #seccionTres .card.card1 {
+    background-image: url("../css/img/nov6.png");
+  }
+  body #seccionTres .card.card-large {
+    height: 24rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .navbar img {
+    width: 10%;
+    margin: 0;
+  }
+  body .imgHome .textoIndex {
+    width: 100%;
+  }
+  body .imgHome .textoIndex h2 {
+    font-size: 25px;
+  }
+  body .seccion {
+    margin-top: 20px;
+  }
+  body .titulo-seccion {
+    margin-bottom: 0px;
+  }
+  body #seccionDos .principalAOcultar {
+    display: none;
+  }
+  body #seccionDos .columna-imagenes .articuloOculto {
+    display: block;
+    text-align: center;
+  }
+  body #seccionDos .columna-imagenes .articuloOculto .capaUno {
+    font-size: 7rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #b0b0b0;
+    position: absolute;
+    z-index: -1;
+  }
+  body #seccionDos .columna-imagenes .articuloOculto .contPropuesta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 1.2rem;
+    padding-top: 5.5rem;
+    text-align: j;
+  }
+  body #seccionDos .columna-imagenes .articuloOculto .contPropuesta .tituloCapa {
+    text-align: left;
+    font-family: "GothamRoundedBold";
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  body #seccionTres .card {
+    margin-bottom: 12px;
+  }
+  body #seccionTres .card.card-large {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  body .imgHome .textoIndex {
+    margin-top: -80%;
+  }
+  body #seccionTres .card {
+    height: 14rem;
+  }
+  body #seccionTres .card.card1 {
+    background-image: url("../css/img/nov6.png");
+  }
+  body #seccionTres .card.card4 {
+    background-image: url("../css/img/nov7.png");
+  }
+  body #seccionTres .card.card-large {
+    height: 14rem;
+  }
+  body #seccionTres .card .card-body .card-title {
+    font-size: 30px;
+  }
+  body #seccionTres .card .card-body .card-text {
+    font-size: 20px;
+  }
+}
