@@ -207,7 +207,7 @@ body #seccionUno .cmn-divfloat a:hover {
 }
 
 body #seccionUno .textoUno {
-  margin-top: 5%;
+  margin-top: 2%;
   overflow: hidden;
   border-bottom: 5px solid;
   -o-border-image: linear-gradient(to right, #000000, #DD0000, #FFCC00) 8;
@@ -233,6 +233,15 @@ body #seccionUno .textoUno .textoBiografiaUno div > .row {
 
 body #seccionUno .textoUno .row {
   --bs-gutter-x: 0 rem;
+}
+
+body #seccionUno .textoUno .final-seccion .yellow-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #DD0000;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 45px 5px;
 }
 
 body #seccionDos {
