@@ -67,7 +67,6 @@ body {
         align-items: center;
         color: white;
         text-align: center;
-
         &::before {
             content: "";
             position: absolute;
@@ -95,10 +94,10 @@ body {
     @media (max-width: 768px) {
     .imgHome {
         height: 50vh;
-
         .textoIndex {
         h2 {
             font-size: 1.8rem;
+            margin-top: -40%;
         }
         }
     }
@@ -242,6 +241,8 @@ body {
         .imgHome {
             .textoIndex {
                 width: 100%;
+
+        // padding-top: 50%;
                 h2 {
                     font-size: 25px;
                 }
@@ -277,6 +278,7 @@ body {
         .imgHome {
             .textoIndex {
                 width: 100%;
+                padding-top: 50%;
                 h2 {
                     font-size: 25px;
                 }
@@ -332,11 +334,11 @@ body {
 }
 @media screen and (max-width: 446px) {
     body {
-        .imgHome {
-            .textoIndex {
-                margin-top: -80%;
-            }
-        }
+        // .imgHome {
+        //     .textoIndex {
+        //         margin-top: 50%;
+        //     }
+        // }
         #seccionTres{
             .card {
                 height: 14rem;

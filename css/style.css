@@ -181,6 +181,7 @@ body .imgHome .textoIndex h2 {
   }
   body .imgHome .textoIndex h2 {
     font-size: 1.8rem;
+    margin-top: -40%;
   }
 }
 
@@ -350,6 +351,7 @@ body #seccionTres .botonContacto button:hover {
   }
   body .imgHome .textoIndex {
     width: 100%;
+    padding-top: 50%;
   }
   body .imgHome .textoIndex h2 {
     font-size: 25px;
@@ -401,9 +403,6 @@ body #seccionTres .botonContacto button:hover {
 }
 
 @media screen and (max-width: 446px) {
-  body .imgHome .textoIndex {
-    margin-top: -80%;
-  }
   body #seccionTres .card {
     height: 14rem;
   }
