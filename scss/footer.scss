@@ -7,6 +7,7 @@ footer {
 
   img {
     width: 50px;
+    display: block; // evita espacio extra debajo de la imagen
   }
 
   a {
@@ -40,6 +41,34 @@ footer {
   .separador {
     color: #fff;
   }
+
+  // 🔹 Alineado del logo + texto en el footer
+  .row.align-items-center {
+    .col-lg-4 {
+      display: flex;
+      align-items: center;
+      justify-content: center; // centra horizontalmente
+      flex-wrap: wrap; // para responsive
+
+      img {
+        max-height: 60px;
+        margin-right: 10px;
+      }
+
+      span, p, div {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+      }
+
+      // Pseudo-elemento vacío por si necesitás "forzar" el nodo texto como elemento
+      &::before {
+        content: "";
+      }
+    }
+  }
 }
+
+
 
 
